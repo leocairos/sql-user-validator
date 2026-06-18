@@ -1,0 +1,7 @@
+# Ficheiros de configuração e segredos
+.env
+logins.json
+resultado_acessos.csv
+
+# Dependências Node
+node_modules/
