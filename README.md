@@ -57,10 +57,11 @@ O script iterará sobre cada credencial do `logins.json`, tentará conectar ao b
 
 ## 📊 Resultados e Output
 
-Após a execução, um arquivo chamado **`resultado_acessos.csv`** será gerado automaticamente na raiz do projeto. 
+Após a execução, um arquivo chamado **`resultado_acessos.csv`** será gerado automaticamente. 
 
 O arquivo possui a seguinte estrutura de colunas:
 * **login:** O usuário que foi testado.
+* **Roles:** Os grupos de permissões que o usuário possui no banco (ex: `db_owner`, `db_datareader`, `public`). Múltiplas roles serão separadas por ponto e vírgula (`; `).
 * **SchemaName:** O schema do objeto (ex: `dbo`). Retorna "SEM_ACESSO" ou "ERRO_CONEXAO" em caso de falha.
 * **ObjectName:** O nome da tabela, view, ou a mensagem descritiva de erro/falta de acesso.
 * **ObjectType:** O tipo do objeto (`USER_TABLE`, `VIEW`, `ERRO`, etc).
