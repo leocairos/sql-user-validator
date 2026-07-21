@@ -1,7 +1,11 @@
 # Ficheiros de configuração e segredos
 .env
 logins.json
+logins_pr.json
+logins_dv.json
 resultado_acessos.csv
+resultado_acessos_pr.csv
+resultado_acessos_dv.csv
 
 # Dependências Node
 node_modules/
